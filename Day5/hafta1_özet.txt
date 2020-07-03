@@ -1,0 +1,10 @@
+Hafta Özet
+
+Gün1:HTML üzerinde sıralı (OL) liste ve sırasız (UL) liste oluşturmayı öğrendim. Sıralı ve sırasız listeyi okul numaramın son 2 hanesine göre XY olarak X+4 sıralı liste oluşturdum ve 5 tane sıralı liste elde ettim. Bu oluşturduğum sıralı listenin 2. liste elemanına ise X+3 sırasız liste oluşturdum ve 4 tanede sırasız liste elde ettim.
+HTML üzerinde tabloyu listelemede kullandığım gibi okul numaramın son 2 hanesine göre tablo oluşturdum. Bunuda Y+2 Satır ve X+3 sutun oluşturdum. Oluşturduğum tablo ise 5 satır 4 sutun oldu. Tablo kalınlığı ise ((Y mod 5)+1) px yani 4px kalınlığında kenarlık oluşturdum. Ardından ilk oluşturduğum sıralı ve sırasız listeyi oluşturduğum tablonun yine okul numaramın son 2 hanesine göre XY olarak X değeri birinci satır, Y değeri ikinci sutuna ekledim.
+
+Gün2:Oluşturduğum tabloya CSS ekleyerek güzel bir görünüm kazandırdım.
+
+Gün3:Oluşturduğum tabloyu CSS komutu olan media queries ekledim. Bu media queries komutu sayfanın mobil ve bilgisayar kullanımlarında farklı ekran çözünürlüklerine daha uyumlu çalışmasını sağlan CSS3 komutudur. Bu komut sayfanın büyüklüğüne göre sayfadaki tablo yazı vs farklı şekillendirmemize olanak sağlar. Sayfama eklediğim media queries komutu ile tablomu okul numaramın son 2 hanesine göre sayfa boyutu 5XY büyük ve küçük olduktan sonra tablo kenarlığı, kenarlık rengi, arkaplan rengi vs farklı görünmesini sağladım ve her yaptığım değişikliği farklı .html dosyaları üzerinde gösterdim.
+
+Gün4:CSS Grid komutunun ne işe yaradığını anlatan bir dosya oluşturdum. CSS Grid, web sayfası üzerinde 2 boyutlu, sayfa yerleştirme imkanı sağlayan css komutudur.  Tüm tarayıcılar tarafından desteklenir. Mobil ve bilgisayar üzerindede aynı görüntüyü görmemizi sağlar. Web sayfasının iskeletini oluşturur. Sayfa üzerinde kolay tasarım yapmamızı sağlar. Web safalarını düzenli tutmaya yarar. Izgara sistemi olarakta bilinir.
