@@ -1,1 +1,58 @@
-# DPU-TMYO-STAJ-201833261013-Semih-Kosif
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/*Elemanları burda tanımlıyoruz.*/
+.item1 { grid-area: baslik; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: anaSayfa; }
+.item4 { grid-area: katagori; }
+.item5 { grid-area: kisim0; }
+.item6 { grid-area: kisim1; }
+.item7 { grid-area: kisim2; }
+
+.grid-container {
+  display: grid;
+
+	/*Elemanların yerini belirliyoruz kaç satır ve kaç sutün olacağını.*/
+  grid-template-areas:
+    'baslik baslik baslik baslik baslik baslik'
+    'menu anaSayfa anaSayfa anaSayfa anaSayfa katagori'
+    'menu kisim0 kisim0 kisim0 kisim0 katagori'
+    'menu kisim1 kisim1 kisim1 kisim1  katagori'
+	'menu kisim2 kisim2 kisim2 kisim2 katagori';
+  
+  /*Renkler ve kalınlık ayarları.*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+	/*Renk Font ve arkaplan ayarlarını yapar.*/
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  
+}
+</style>
+</head>
+<body>
+<!--/*Tanımladığımız elemanları burda içeriğini düzenliyoruz.-->
+<h1>Grid Kullanımı</h1>
+
+<div class="grid-container">
+  <div class="item1">Başlık</div>
+  <div class="item2">Menü</div>
+  <div class="item3">Ana Sayfa</div>  
+  <div class="item4">Katagori</div>
+  <div class="item5">İçerik</div>
+  <div class="item6">İçerik</div>
+  <div class="item7">İçerik</div>
+
+</div>
+
+</body>
+</html>
