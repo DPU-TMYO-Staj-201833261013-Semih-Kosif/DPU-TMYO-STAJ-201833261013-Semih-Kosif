@@ -1,1 +1,132 @@
-# DPU-TMYO-STAJ-201833261013-Semih-Kosif
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/*Elemanları burda tanımlıyoruz.*/
+.item1 { grid-area: baslik; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: anaSayfa; }
+.item4 { grid-area: katagori; }
+.item5 { grid-area: kisim0; }
+.item6 { grid-area: kisim1; }
+.item7 { grid-area: kisim2; }
+
+.grid-container {
+  display: grid;
+
+	/*Elemanların yerini belirliyoruz kaç satır ve kaç sutün olacağını.*/
+  grid-template-areas:
+    'baslik baslik baslik baslik baslik baslik'
+    'menu anaSayfa anaSayfa anaSayfa anaSayfa katagori'
+    'menu kisim0 kisim0 kisim0 kisim0 katagori'
+    'menu kisim1 kisim1 kisim1 kisim1  katagori'
+	'menu kisim2 kisim2 kisim2 kisim2 katagori';
+  
+  /*Renkler ve kalınlık ayarları.*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+	/*Renk Font ve arkaplan ayarlarını yapar.*/
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/*Açılan liste görünümünü düzenlemek için gerekli olan açılır pencere büyüklüğü renk seçimi arka plan rengi vs ayarkar için gerekli css kodu*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/*Açılan listede ekrana çıkan yazıların ayar bölümü*/
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/*Açılan listede çıkan seçeneklerin üzerine geldiğimizde arka planın gri olması için gerekli kod*/
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/*Açılır listenin açılması için gerekli kod */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.paragraf {
+font-size: 25px;
+}
+</style>
+</head>
+<body>
+<!--Tanımladığımız elemanları burda içeriğini düzenliyoruz.-->
+<div class="grid-container">
+  <div class="item1">Bilgisayar Bilimleri</div>
+  <div class="item2"><b>Menü</b><br> 
+ <a href="">Anasayfa</a><br>
+<div class="dropdown">
+  <a href="">Yazılım Programları</a>
+  <div class="dropdown-content">
+<!--Açılan listede kaç satır olacaksa buraya ekliyoruz-->
+  <a href="">C#</a>
+  <a href="">Visual Basic</a>
+  <a href="">Java</a>
+  <a href="">HTML</a>
+  <a href="">CSS</a>
+  <a href="">SQL</a>
+  <a href="">Python</a>
+  </div>
+</div><br> 
+<div class="dropdown">
+  <a href="">Donanım Parçaları</a>
+  <div class="dropdown-content">
+  <a href="">İşlemci</a>
+  <a href="">Ekran kartı</a>
+  <a href="">RAM</a>
+  <a href="">Kasa</a>
+  <a href="">Anakart</a>
+  <a href="">Power(PSU)</a>
+  <a href="">Disk Sürücü</a>
+  <a href="">Ses kartı</a>
+  </div>
+</div><br> 
+<a href="">İletişim</a><br> 
+<a href="">Hakkında</a><br> 
+</div>
+  <div class="item3">Ana Sayfa</div>  
+  <div class="item4">
+<b>Donanım Parçaları</b><br> 
+<a href="">İşlemci</a><br> 
+<a href="">Ekran kartı</a><br> 
+<a href="">RAM</a><br> 
+<a href="">HDD, SSD</a><br> 
+<a href="">Kasa</a><br> 
+<a href="">Anakart</a><br> 
+<a href="">Power(PSU)</a><br> 
+<a href="">Disk Sürücü</a><br> 
+<a href="">Ses kartı</a><br> 
+</div>
+  <div class="item5">İşlemcinin Görevi<br><p class="paragraf">Bir işlemci, bilgisayarın tüm temel komutlarından sorumlu merkezi birimdir. Zaten CPU adıyla anınan birimde, C (Central) demektir. Çok daha detaylı bir bilgi birikimini hak eden bu birim, tarafımca bir sonraki yazımda ayrıca incelenecektir ama bugün de oldukça derinlere ineceğiz. Derine, en derine. 1971 yılında Intel 4004 ile çok daha farklı bir alt yapı üzerinden, mikro denetleyici görünümündeki bu birim, bugün kendine özel has bir görünüme kavuşmuştur.<br>
+İşlemci aileleri, Celeron, Pentium, i3, i5, i7 ve hatta XEON aileleri olarak tanıtılabilir. Bu Intel tarafındandır. AMD tarafında ise, FX, Phenom, hatta Opteron aileleri olarak tanıtılabilir.<br>
+Günümüzde en kaliteli oyun işlemcileri i5 ve i7’dir. Cep yakmasın isteyenler AMD tercih edebilir ama faturayla açığı kapatacaklardır. i5 işlemcilerin, i7 işlemcilerden bazı oyunlarda daha başarılı olmasının bazı oyunların 4 çekirdeğe kadar izin vermesi olduğu gibi, i5 işlemcilerde 4 çekirdeğin doğrudan kullanılması iken, i7 işlemcilerde duruma göre 2 çekirdek ve 2 izleğin kullanılabilmesidir. İzlek, çekirdeğin yansımasıdır ve genel olarak i7 işlemcilerde bulunur. AMD işlemcilerde ise yüksek güç kullanımı ve çoklu çekirdek, fazla önbellek (RAM’den daha hızlı temel bellek, bilgisayardaki ufak detayların en hızlı biçimde işlenmesini sağlar) gövde gösterisi yapsa da, Intel, özelleşmiş mimarisiyle AMD işlemcilerin darboğaz yaptığı yerde sorunsuz çalışacaktır. En güçlü güncel i7 masa üstü işlemci, en güçlü güncel i7 notebook (Mobil) işlemciden 2 kat iyidir. AMD’nin en güçlü FX işlemcisi ise en güçlü notebook işlemcisine dahi yaklaşamamaktadır.</p></div>
+
+
+</div>
+
+</body>
+</html>
