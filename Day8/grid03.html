@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
 
+/*Elemanları burda tanımlıyoruz.*/
+.item1 { grid-area: baslik; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: anaSayfa; }
+.item4 { grid-area: katagori; }
+.item5 { grid-area: kisim0; }
+.item6 { grid-area: kisim1; }
+.item7 { grid-area: kisim2; }
+
+.grid-container {
+  display: grid;
+  
+  /*Renkler ve kalınlık ayarları.*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+	/*Renk Font ve arkaplan ayarlarını yapar.*/
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  
+}
+ div {
+  background-color: white;
+  color: red;
+  border-color: blue;
+  border-style:inset;
+    border-width: 9px;
+}
+
+@media screen and (min-width: 513px)
+{
+	div{
+	 grid-template-areas:
+    'baslik baslik baslik baslik baslik baslik'
+    'menu anaSayfa anaSayfa anaSayfa anaSayfa katagori'
+    'menu kisim0 kisim0 kisim0 kisim0 katagori'
+    'menu kisim1 kisim1 kisim1 kisim1  katagori'
+    'menu kisim2 kisim2 kisim2 kisim2 katagori';
+	}
+}
+/*max-width: 513px özelliği ile sayfa boyutu 513 px ten sonra aşağıdaki yapılar oluşur*/
+@media screen and (max-width: 513px) {
+  div	 {
+    border-color: red;
+    border-style:inset;
+    border-width: 6px;*/
+/* Bu Kısımda grid yapısını değiştirmeye yarıyor. 
+	grid-template-areas:
+	'baslik katagori'
+	'menu kisim0'
+	'anaSayfa kisim1'
+	'kisim2 kisim2 ';
+*/
+/*sayfa boyutu 513px ten sonra grid yapısının içerisindeki menü katagori anasayfa gibi kısımlar yer değiştirmesini sağlayan kod gönderilen e-postada bunu anladım ve bunu yaptım grid yapısının değişmesi bir üst kısmdaki açıklama satırında bulunan kodlarla oluyor.*/
+	grid-template-areas:
+    'anaSayfa anaSayfa anaSayfa anaSayfa anaSayfa anaSayfa'
+    'katagori baslik baslik baslik baslik menu'
+    'katagori kisim0 kisim0 kisim0 kisim0 menu'
+    'katagori kisim1 kisim1 kisim1 kisim1 menu'
+    'katagori kisim2 kisim2 kisim2 kisim2 menu';
+  }
+</style>
+</head>
+<body>
+<!--/*Tanımladığımız elemanları burda içeriğini düzenliyoruz.-->
+<h1>Grid Kullanımı</h1>
+
+<div class="grid-container">
+  <div class="item1">Başlık</div>
+  <div class="item2">Menü</div>
+  <div class="item3">AnaSay</div>  
+  <div class="item4">Katagori</div>
+  <div class="item5">İçerik1</div>
+  <div class="item6">İçerik2</div>
+  <div class="item7">İçerik3</div>
+
+</div>
+
+</body>
+</html>
